@@ -45,7 +45,7 @@ public class BoardTests {
 	@Test
 	void delete() {
 		
-		Board entity = boardRepository.findById((long) 1).get();
+		Board entity = boardRepository.findById((long) 2).get();
 		
 		boardRepository.delete(entity);
 	}
