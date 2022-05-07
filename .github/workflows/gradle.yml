@@ -27,7 +27,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-      name : chmod +x gradlew
+    - name : chmod +x gradlew
       run : cd ~/actions-runner/_work/study_jpa_github_actions/study_jpa_github_actions | chmod +x gradlew
     - name: Build with Gradle
       uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
