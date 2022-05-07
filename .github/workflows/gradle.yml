@@ -34,3 +34,7 @@ jobs:
       uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
       with:
         arguments: build
+    - name : copy project file
+      run : sudo cp -RT ~/actions-runner/_work/study_jpa_github_actions/study_jpa_github_actions/ /var/www/html
+    - name : run project
+      run : cd /var/www/html/build/libs | java -jar JPABoard-0.0.1-SNAPSHOT.jar
