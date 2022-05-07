@@ -14,11 +14,11 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: read
+  contents: [read, write]
 
 jobs:
   build:
-  
+
     runs-on: self-hosted
 
     steps:
