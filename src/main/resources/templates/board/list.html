@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
-<head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
-    <meta content="" name="description" />
-    <meta content="" name="author" />
-    <link rel="stylesheet" th:href="@{/css/style.css}" />
-    <link rel="stylesheet" th:href="@{/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css}" />
-    <title>JPA 게시판</title>
-</head>
+<!-- 공통헤드 -->
+<head th:replace="layout/head :: head"></head>
 
 <body>
     <div class="fixed-navbar">
@@ -87,11 +79,7 @@
                     </div>
                 </div>
             </div>
-            <footer class="footer">
-                <ul class="list-inline">
-                    <li>2016 © NinjaAdmin.</li>
-                </ul>
-            </footer>
+            <footer th:fragment="layout/footer :: footer"></footer>
         </div>
     </div>
 
