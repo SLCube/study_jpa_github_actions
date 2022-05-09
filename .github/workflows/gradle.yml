@@ -45,4 +45,4 @@ jobs:
     needs : build
     steps : 
       - name : Deploy build to target
-        run : cd ~/actions-runner/_work/study_jpa_github_actions/study_jpa_github_actions && ./start.sh
+        run : cd ~/actions-runner && ./start.sh
