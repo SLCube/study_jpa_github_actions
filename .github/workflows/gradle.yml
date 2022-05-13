@@ -44,4 +44,4 @@ jobs:
     needs : build
     steps : 
       - name : Deploy build to target
-        run : cd ~/actions-runner && ./start.sh &
+        run : cd ~/actions-runner && RUNNER_TRACKING_ID="" && ./start.sh &
